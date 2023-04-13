@@ -36,5 +36,33 @@ class UserTableSeeder extends Seeder
 
         $user->assignRole($role);
 
+
+        //create 1 doctor
+        $user = User::create([
+            'name' => 'khairy',
+            'email' => $faker->unique()->safeEmail(),
+            'password' => Hash::make(123456),
+            'national_id' => random_int(11111111111111, 99999999999999),
+            'phone_number' => '011'.$faker->numberBetween(11111111, 99999999),
+            'image' => '35600889874836_2023-04-05'
+        ]);
+
+        $user->assignRole('doctor');
+
+
+
+        //create 20 sick people
+        for ($i=0; $i < 20 ; $i++) {
+            $user = User::create([
+                'name' => $faker->name(),
+                'email' => $faker->unique()->safeEmail(),
+                'password' => Hash::make(123456),
+                'national_id' => random_int(11111111111111, 99999999999999),
+                'phone_number' => '011'.$faker->numberBetween(11111111, 99999999)
+            ]);
+
+            $user->assignRole('sick');
+        }
+
     }
 }

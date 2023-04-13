@@ -39,7 +39,12 @@
 
       <li class="nav-item dropdown mr-30">
         <a class="nav-link nav-pill user-avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          <img src="{{asset('backend/images/profile-avatar.jpg')}}" alt="avatar">
+            @role('head_of_hospital')
+                <img src="{{ asset('backend/images/profile-avatar.jpg') }}" alt="avatar">
+            @else
+                <img src="{{asset('Doctor_image/'.Auth()->user()->image)}}" alt="avatar">
+            @endrole
+
         </a>
         <div class="dropdown-menu dropdown-menu-right">
           <div class="dropdown-header">
@@ -76,3 +81,5 @@
       </li>
     </ul>
   </nav>
+
+
