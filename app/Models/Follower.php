@@ -25,4 +25,6 @@ class Follower extends Model
     {
         return $this->belongsTo(Surgery::class);
     }
+
+  
 }

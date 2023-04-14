@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\DoctorOnlyUpdateFollowMiddleware;
 use Spatie\Permission\Middlewares\RoleMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Spatie\Permission\Middlewares\PermissionMiddleware;
@@ -71,5 +72,6 @@ class Kernel extends HttpKernel
         'role' => RoleMiddleware::class,
         'permission' => PermissionMiddleware::class,
         'role_or_permission' => RoleOrPermissionMiddleware::class,
+        'doctor_only_update' => DoctorOnlyUpdateFollowMiddleware::class
     ];
 }

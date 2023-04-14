@@ -30,6 +30,8 @@ return [
     'Submit' => 'حفظ',
     'delete' => 'حذف',
     'more_action' => 'عمليات',
+    'created_at' => 'تم اضافته',
+    'updated_at' => 'تم التعديل عليه',
 
 
 
@@ -48,6 +50,18 @@ return [
     'doctor_name' => 'اسم الدكتور',
     'sick_name' => 'اسم المريض',
     'sick_national_id' => 'الرقم القومي للمريض',
+    'surgery' => 'عمليات جراحيه',
+    'surgery_name' => 'اسم العمليه',
+    'surgery_status' => 'حاله العمليه',
+    'surgery_not_found' => 'لم تتم اضافه اي عمليات',
+
+    'attachment_name' => 'اسم مستند',
+    'attachemnt_desc' => 'وصف مستند',
+    'attachments' => 'مستندات',
+    'attachment_file' => 'اضافه مستند',
+    'attachment_not_found' => 'لم تتم اضافه اي مستندات',
+    'attachment_download' => 'تنزيل المستند',
+
 
 
 

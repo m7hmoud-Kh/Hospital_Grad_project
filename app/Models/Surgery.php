@@ -15,4 +15,21 @@ class Surgery extends Model
     {
         return $this->belongsTo(Follower::class);
     }
+
+    public function getStatus($status)
+    {
+        switch ($status) {
+            case 0:
+                return "<button class='btn btn-info btn-circle btn-sm'>
+                لم يتم الرد
+            </button>";
+            case 1:
+                return '<button class="btn btn-success btn-circle btn-sm">
+                موافق
+            </button>';
+                break;
+            default:
+                break;
+        }
+    }
 }

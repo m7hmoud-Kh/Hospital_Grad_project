@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Dashboard\AttachmentController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\DoctorController;
 use App\Http\Controllers\Dashboard\FollowController;
 use App\Http\Controllers\Dashboard\SickController;
+use App\Http\Controllers\Dashboard\SurgeryController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -45,8 +47,18 @@ Route::group(['middleware'=>['auth','role:doctor']], function () {
     Route::get('all-follow', [FollowController::class, 'index'])->name('follow.index');
     Route::get('create-follow/{sick_id}', [FollowController::class, 'create'])->name('follow.create');
     Route::post('store-follow/{sick_id}', [FollowController::class, 'store'])->name('follow.store');
+    Route::get('details-follow/{follow_id}', [FollowController::class, 'getDetails'])->name('follow.details');
+    Route::get('follow-edit/{follow_id}', [FollowController::class, 'edit'])
+    ->name('follow.edit')->middleware('doctor_only_update');
+
+    Route::put('update-follow/{follow_id}', [FollowController::class, 'update'])->name('follow.update');
 
 
+    Route::post('store-surgery/{follow_id}', [SurgeryController::class, 'store'])->name('surgery.store');
+
+
+
+    Route::post('store-attachment/{follow_id}', [AttachmentController::class, 'store'])->name('attachment.store');
 });
 
 
