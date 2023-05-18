@@ -1,0 +1,130 @@
+/* start upper bar*/
+.upper-bar
+{
+background-color:#08526d;
+color: #FFF;
+padding: 5px;
+}
+.upper-bar span{
+    color:#f6f9fa;
+}
+.upper-bar .get-quote{
+    padding: 2px 3px;
+    margin-left: 10px;
+    color: #FFF;
+
+}
+.upper-bar h4{
+    color:#fcfcfc;
+    font-weight: bolder;
+    text-transform:uppercase ;
+    font-size: 20px;
+    margin-bottom:10px ;
+    
+}
+.upper-bar span{
+    color: #ec1c23;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size:20px ;
+    margin-bottom: 10px;
+}
+/* end upper bar */
+
+
+
+/* start navbar*/
+.navbar{
+    background-color: #ffffff;
+    padding: 1px;
+
+}
+
+.navbar-brand >span{
+    
+    font-size: 35px;
+}
+.navbar-brand span:first-child{
+    color: #08526d;
+    font-size: 50px;
+
+ }
+ 
+.navbar-brand span:last-child{
+     font-weight: bold;
+     color: #ec1c23;
+     font-size: 50px;
+ }
+.navbar i{
+    color:#FFF;
+   
+    
+}
+.navbar-nav .nav-link{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color:#08526d;
+
+}
+
+.navbar-light .navbar-nav .active >.nav-link {
+    /* .navbar-nav .active> .nav-link { color:#ec1c23 !important */
+    color: #ec1c23;
+    font-weight: bold;
+
+}
+
+/* end navbar*/ 
+
+
+/*start card */
+.card-body{
+    color: rgb(68, 104, 133);
+    
+}
+.card-body .get-quote{
+    background-color: #e8e8e8b0;
+}
+
+.card-body label{
+    margin-right: 20px;
+    font-size: 30px;
+    color: #030303;
+}
+.get-quote .btn{
+    color: #f6f9fa;
+    background-color: #fa0000;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+/*end card*/
+
+
+.container h1{
+    color: rgb(245, 4, 4);
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom:50px ;
+}
+.container span{
+    color: rgb(9, 38, 66);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom:50px ;
+}
+.container input{
+    color: black;
+    font-size: 20px;
+}
+
+.table {
+    color: #03181f;
+    font-size: 30px;
+    margin: 30px  10px;    
+}
+

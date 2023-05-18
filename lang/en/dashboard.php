@@ -39,6 +39,7 @@ return [
     'all_sick' => 'كل المرضي',
     'add_sick' => 'اضافه مريض',
     'alert_delete_sick' => 'هل تريد حذف مريض لديه هذا الرقم القومي',
+    'delete_sick' => 'حذف مريض',
 
     'add_follow' => 'اضافه متابعه',
     'edit_follow' => 'تعديل',
@@ -52,6 +53,7 @@ return [
     'sick_national_id' => 'الرقم القومي للمريض',
     'surgery' => 'عمليات جراحيه',
     'surgery_name' => 'اسم العمليه',
+    'surgery_operation' => 'ميعاد العمليه',
     'surgery_status' => 'حاله العمليه',
     'surgery_not_found' => 'لم تتم اضافه اي عمليات',
 

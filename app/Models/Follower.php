@@ -23,8 +23,14 @@ class Follower extends Model
 
     public function surgery()
     {
-        return $this->belongsTo(Surgery::class);
+        return $this->hasMany(Surgery::class);
     }
 
-  
+    public function attachment()
+    {
+        return $this->hasMany(Attachment::class);
+    }
+
+
+
 }

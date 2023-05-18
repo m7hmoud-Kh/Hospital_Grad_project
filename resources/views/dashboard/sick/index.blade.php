@@ -90,7 +90,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">
-                        {{__('dashboard.delete_doctor')}}
+                        {{__('dashboard.delete_sick')}}
                     </div>
                 </div>
                 <form action="{{route('sick.destory',1)}}" method="post">

@@ -16,9 +16,11 @@ return new class extends Migration
         Schema::create('surgeries', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('status', [0,1])->default(0)->comment('
-            0 => not Responed
-            1 => Accpted');
+            $table->enum('status', [0,1,2])->default(0)->comment('
+            0 => waiting
+            1 => Accpted
+            2 => not Acccpted');
+            $table->date("operation_time");
             $table->foreignId('follower_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });

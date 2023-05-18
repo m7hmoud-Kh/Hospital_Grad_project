@@ -12,6 +12,7 @@ class SurgeryController extends Controller
     {
         Surgery::create([
             'name' => $request->name,
+            'operation_time' => $request->operation_time,
             'follower_id' => $followId
         ]);
 

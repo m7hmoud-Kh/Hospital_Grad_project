@@ -64,6 +64,18 @@
                         @enderror
                     </div>
 
+                    <div class="form-group">
+                        <label for="operation_time">{{ __('dashboard.surgery_operation') }}</label>
+                        <input type="date" name="operation_time" class="form-control" id="operation_time"
+                            value="">
+
+                        @error('operation_time')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+
                     <button type="submit" class="btn btn-primary">{{ __('dashboard.Submit') }}</button>
                 </form>
             </div>

@@ -28,6 +28,12 @@ class Surgery extends Model
                 موافق
             </button>';
                 break;
+
+            case 2:
+                return '<button class="btn btn-danger btn-circle btn-sm">
+                غير موافق
+            </button>';
+                break;
             default:
                 break;
         }
